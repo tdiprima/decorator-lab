@@ -1,0 +1,2 @@
+# Runtime dependencies
+tenacity==9.0.0
