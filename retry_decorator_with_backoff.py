@@ -30,4 +30,4 @@ def flaky_func():
     raise ValueError("Fail!")  # Will retry
 
 
-flaky_func()  # Uncomment to test; will raise after 3 tries
+flaky_func()  # Will raise after 3 tries

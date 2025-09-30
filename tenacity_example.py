@@ -5,6 +5,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=0.5, min=0.5, max=10)
 )
-def example_function():
-    # Your function implementation here
-    pass
+def flaky_func():
+    raise ValueError("Fail!")  # Will retry
+
+
+flaky_func()  # Will raise after 3 tries
