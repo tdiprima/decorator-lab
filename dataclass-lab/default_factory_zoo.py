@@ -1,4 +1,4 @@
-# This script uses default_factory for mutable defaults like lists in a dataclass.
+# Uses default_factory for mutable defaults like lists in a dataclass.
 
 from dataclasses import dataclass, field
 

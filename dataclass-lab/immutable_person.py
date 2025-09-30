@@ -1,4 +1,4 @@
-# This script creates an immutable dataclass that raises an error on attribute changes.
+# Creates an immutable dataclass that raises an error on attribute changes.
 from dataclasses import dataclass
 
 

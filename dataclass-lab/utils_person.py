@@ -1,4 +1,4 @@
-# This script demonstrates utility functions like asdict, astuple, and replace.
+# Demonstrates utility functions like asdict, astuple, and replace.
 from dataclasses import asdict, astuple, dataclass, replace
 
 

@@ -1,4 +1,4 @@
-# This script demonstrates a basic dataclass for a Person with auto-generated methods like __init__ and __repr__.
+# Demonstrates a basic dataclass for a Person with auto-generated methods like __init__ and __repr__.
 from dataclasses import dataclass
 
 

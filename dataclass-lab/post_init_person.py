@@ -1,4 +1,4 @@
-# This script uses __post_init__ for validation after initialization, with a random family example.
+# Uses __post_init__ for validation after initialization, with a random family example.
 from dataclasses import dataclass, field
 
 

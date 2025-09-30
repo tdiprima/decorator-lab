@@ -1,4 +1,4 @@
-# This script uses default_factory with UUID for unique dynamic defaults.
+# Uses default_factory with UUID for unique dynamic defaults.
 
 import uuid
 from dataclasses import dataclass, field

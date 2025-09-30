@@ -1,4 +1,4 @@
-# This script shows memory optimization with slots=True (Python 3.10+). Made this one up as a simple demo since article's was basic.
+# Shows memory optimization with slots=True (Python 3.10+). Made this one up as a simple demo since article's was basic.
 
 from dataclasses import dataclass
 

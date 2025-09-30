@@ -1,4 +1,4 @@
-# This script shows default values in a dataclass and how to create an instance using them.
+# Shows default values in a dataclass and how to create an instance using them.
 
 from dataclasses import dataclass
 

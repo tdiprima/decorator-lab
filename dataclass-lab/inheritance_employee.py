@@ -1,4 +1,4 @@
-# This script shows dataclass inheritance from another dataclass.
+# Shows dataclass inheritance from another dataclass.
 
 from dataclasses import dataclass
 

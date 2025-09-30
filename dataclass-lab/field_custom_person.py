@@ -1,4 +1,4 @@
-# This script customizes fields to exclude from repr and compare.
+# Customizes fields to exclude from repr and compare.
 
 from dataclasses import dataclass, field
 

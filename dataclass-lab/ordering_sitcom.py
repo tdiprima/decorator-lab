@@ -1,4 +1,4 @@
-# This script enables ordering in a dataclass for comparisons based on field order.
+# Enables ordering in a dataclass for comparisons based on field order.
 from dataclasses import dataclass
 
 
