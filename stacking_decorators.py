@@ -1,3 +1,7 @@
+"""
+Demonstrates stacking multiple decorators on a single function.
+Shows the order of execution when decorators are applied in sequence.
+"""
 from functools import wraps
 
 

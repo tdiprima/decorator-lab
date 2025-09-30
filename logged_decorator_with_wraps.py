@@ -1,3 +1,7 @@
+"""
+Simple logging decorator that prints function name before execution.
+Demonstrates proper use of @wraps to preserve original function metadata.
+"""
 from functools import wraps
 
 

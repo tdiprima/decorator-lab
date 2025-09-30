@@ -1,3 +1,7 @@
+"""
+Retry decorator with exponential backoff for handling transient failures.
+Automatically retries failed function calls with increasing delays between attempts.
+"""
 import time
 from functools import wraps
 

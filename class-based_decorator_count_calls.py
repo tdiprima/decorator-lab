@@ -1,3 +1,7 @@
+"""
+Implements a class-based decorator that counts how many times a function is called.
+Uses __call__ method to make the class instance callable as a decorator.
+"""
 from functools import wraps
 
 
