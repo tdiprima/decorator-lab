@@ -14,6 +14,6 @@ class Person:
             raise ValueError("Age cannot be negative")
 
 
-# Example usage (simplified; full in article)
+# Example usage
 p = Person(name="Bear Bear", age=45, favorite_tv_show="Sabrina the Teenage Witch")
 print(f"{p.name} is {p.age} & likes watching {p.favorite_tv_show}.")
