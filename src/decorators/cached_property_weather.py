@@ -15,7 +15,7 @@ class WeatherClient:
 
     @cached_property
     def data(self):
-        return requests.get(f"https://wttr.in/{self.city}?format=j1").json()
+        return requests.get(f"https://wttr.in/{self.city}?format=j1", timeout=10).json()
 
 
 client = WeatherClient("Bayport, NY, USA")

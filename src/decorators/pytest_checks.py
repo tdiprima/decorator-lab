@@ -23,5 +23,5 @@ def greet(name):
 
 
 def test_logged_preserves_name_and_doc():
-    assert greet.__name__ == "greet"
-    assert "say hello" in greet.__doc__
+    assert greet.__name__ == "greet"  # nosec B101
+    assert "say hello" in greet.__doc__  # nosec B101

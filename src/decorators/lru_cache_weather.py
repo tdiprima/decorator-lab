@@ -16,7 +16,7 @@ import requests
 @lru_cache(maxsize=128)
 def get_weather(city):
     url = f"https://api.weatherapi.com/{city}"
-    return requests.get(url).json()
+    return requests.get(url, timeout=10).json()
 
 
 print(get_weather("London"))  # real request
