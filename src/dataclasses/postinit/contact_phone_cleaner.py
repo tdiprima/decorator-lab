@@ -4,6 +4,7 @@ Dataclass using __post_init__ to normalize phone numbers by removing dashes and 
 
 from dataclasses import dataclass
 
+
 @dataclass
 class Contact:
     telephone: str
@@ -11,6 +12,7 @@ class Contact:
 
     def __post_init__(self):
         self.telephone = self.telephone.replace("-", "").replace(" ", "")
+
 
 if __name__ == "__main__":
     contact = Contact("+1-123-456-7890")

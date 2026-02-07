@@ -2,6 +2,7 @@
 Parameterized decorator that implements rate limiting for function calls.
 Enforces a maximum number of calls per second by adding delays between invocations.
 """
+
 import time
 from functools import wraps
 

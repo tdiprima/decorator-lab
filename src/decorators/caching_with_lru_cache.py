@@ -2,6 +2,7 @@
 Demonstrates caching with @lru_cache decorator for memoizing function results.
 Implements a Fibonacci function that caches intermediate calculations to improve performance.
 """
+
 from functools import lru_cache
 
 

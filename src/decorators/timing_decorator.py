@@ -2,6 +2,7 @@
 Performance timing decorator that measures function execution time.
 Uses perf_counter() for high-precision timing measurements and reports results.
 """
+
 import time
 from functools import wraps
 

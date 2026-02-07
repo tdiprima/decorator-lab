@@ -3,6 +3,7 @@ Test suite for verifying that decorators preserve function metadata.
 Ensures @wraps properly maintains __name__ and __doc__ attributes.
 Run with: pytest pytest_checks.py
 """
+
 from functools import wraps
 
 

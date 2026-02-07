@@ -4,6 +4,7 @@ Dataclass example using __post_init__ for field validation, ensuring price is no
 
 from dataclasses import dataclass
 
+
 @dataclass
 class InventoryItem:
     description: str
@@ -13,6 +14,7 @@ class InventoryItem:
     def __post_init__(self):
         if self.unit_price < 0:
             raise ValueError("Unit price must be non-negative")
+
 
 if __name__ == "__main__":
     item = InventoryItem("Laptop", 999.99)

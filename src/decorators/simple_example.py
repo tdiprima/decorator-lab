@@ -2,6 +2,8 @@
 Minimal decorator example showing basic before/after execution pattern.
 Demonstrates the fundamental structure of a Python decorator.
 """
+
+
 def simple_decorator(fn):
     def wrapper(*args, **kwargs):
         print("before")

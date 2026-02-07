@@ -4,6 +4,7 @@ Frozen (immutable) dataclass using __post_init__ for validation before locking t
 
 from dataclasses import dataclass
 
+
 @dataclass(frozen=True)
 class AppSettings:
     environment: str
@@ -13,6 +14,7 @@ class AppSettings:
         valid_envs = {"development", "staging", "production"}
         if self.environment not in valid_envs:
             raise ValueError(f"Environment must be one of {valid_envs}")
+
 
 if __name__ == "__main__":
     settings = AppSettings("development", True)

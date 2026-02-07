@@ -4,6 +4,7 @@ Dataclass with __post_init__ generating a derived email field if not provided.
 
 from dataclasses import dataclass
 
+
 @dataclass
 class StaffMember:
     given_name: str
@@ -12,7 +13,10 @@ class StaffMember:
 
     def __post_init__(self):
         if not self.email:
-            self.email = f"{self.given_name.lower()}.{self.family_name.lower()}@firm.org"
+            self.email = (
+                f"{self.given_name.lower()}.{self.family_name.lower()}@firm.org"
+            )
+
 
 if __name__ == "__main__":
     staff1 = StaffMember("John", "Doe")

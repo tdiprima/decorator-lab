@@ -5,6 +5,7 @@ normalization, preserving auto-generated __init__.
 
 from dataclasses import dataclass
 
+
 @dataclass
 class Person:
     name: str
@@ -15,6 +16,7 @@ class Person:
         if self.age < 0:
             raise ValueError("Age cannot be negative")
         self.name = self.name.title()
+
 
 if __name__ == "__main__":
     person = Person("alice", 25)

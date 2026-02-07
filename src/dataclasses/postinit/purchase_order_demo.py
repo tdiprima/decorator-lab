@@ -6,6 +6,7 @@ validation on ID, using modern UTC timestamp.
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
+
 @dataclass
 class Purchase:
     order_id: int
@@ -14,6 +15,7 @@ class Purchase:
     def __post_init__(self):
         if self.order_id <= 0:
             raise ValueError("Order ID must be greater than zero")
+
 
 if __name__ == "__main__":
     purchase = Purchase(1001)
