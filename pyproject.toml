@@ -1,0 +1,9 @@
+[project]
+name = "decorator-lab"
+version = "0.1.0"
+description = "Decorators, dataclasses, and functools."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "tenacity>=9.1.4",
+]
